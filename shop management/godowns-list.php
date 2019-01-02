@@ -1,13 +1,13 @@
 <?php
 
-function sinetiks_godowns_list() {
+function rbs_godowns_list() {
     ?>
     <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/sinetiks-schools/style-admin.css" rel="stylesheet" />
     <div class="wrap">
         <h2>Godowns List</h2>
         <div class="tablenav top">
             <div class="alignleft actions">
-                <a href="<?php echo admin_url('admin.php?page=sinetiks_godowns_create'); ?>">Add New</a>
+                <a href="<?php echo admin_url('admin.php?page=rbs_godowns_create'); ?>">Add New</a>
             </div>
             <br class="clear">
         </div>
@@ -39,7 +39,7 @@ function sinetiks_godowns_list() {
 					<td class="manage-column ss-list-width"><?php echo $row->state; ?></td>
 					<td class="manage-column ss-list-width"><?php echo $row->country; ?></td>
 					<td class="manage-column ss-list-width"><?php echo $row->pincode; ?></td>
-                    <td><a href="<?php echo admin_url('admin.php?page=sinetiks_godowns_update&id=' . $row->godown_id); ?>">Update</a></td>
+                    <td><a href="<?php echo admin_url('admin.php?page=rbs_godowns_update&id=' . $row->godown_id); ?>">Update</a></td>
                 </tr>
             <?php } ?>
         </table>

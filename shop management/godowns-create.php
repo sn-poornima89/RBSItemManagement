@@ -1,6 +1,6 @@
 <?php
 
-function sinetiks_godowns_create() {
+function rbs_godowns_create() {
     //$id = $_POST["shop_id"];
     $name = $_POST["godown_name"];
 	$address= $_POST["address"];
@@ -28,7 +28,7 @@ function sinetiks_godowns_create() {
         <h2>Add New Godown</h2>
         <div class="tablenav top">
             <div class="alignleft actions">
-                <a href="<?php echo admin_url('admin.php?page=sinetiks_godowns_list'); ?>">Godowns List</a>
+                <a href="<?php echo admin_url('admin.php?page=rbs_godowns_list'); ?>">Godowns List</a>
             </div>
             <br class="clear">
         </div>

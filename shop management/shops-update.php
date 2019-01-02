@@ -1,6 +1,6 @@
 <?php
 
-function sinetiks_shops_update() {
+function rbs_shops_update() {
     global $wpdb;
     //$table_name = $wpdb->prefix . "school";
 	$table_name = "shops";
@@ -46,11 +46,11 @@ function sinetiks_shops_update() {
 
         <?php if ($_POST['delete']) { ?>
             <div class="updated"><p>Shops deleted</p></div>
-            <a href="<?php echo admin_url('admin.php?page=sinetiks_shops_list') ?>">&laquo; Back to Shop list</a>
+            <a href="<?php echo admin_url('admin.php?page=rbs_shops_list') ?>">&laquo; Back to Shop list</a>
 
         <?php } else if ($_POST['update']) { ?>
             <div class="updated"><p>Shops updated</p></div>
-            <a href="<?php echo admin_url('admin.php?page=sinetiks_shops_list') ?>">&laquo; Back to Shop list</a>
+            <a href="<?php echo admin_url('admin.php?page=rbs_shops_list') ?>">&laquo; Back to Shop list</a>
 
         <?php } else { ?>
             <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">

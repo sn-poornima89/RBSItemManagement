@@ -1,6 +1,6 @@
 <?php
 
-function sinetiks_shops_create() {
+function rbs_shops_create() {
    // $id = $_POST["shop_id"];
     $name = $_POST["shop_name"];
 	$address= $_POST["address"];

@@ -38,7 +38,7 @@ CREATE TABLE `shops` (
   `country` varchar(250) NOT NULL,
   `pincode` varchar(250) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `shops`

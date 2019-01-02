@@ -1,6 +1,6 @@
 <?php
 
-function sinetiks_godowns_update() {
+function rbs_godowns_update() {
     global $wpdb;
     //$table_name = $wpdb->prefix . "school";
 	$table_name ="godowns";
@@ -46,11 +46,11 @@ function sinetiks_godowns_update() {
 
         <?php if ($_POST['delete']) { ?>
             <div class="updated"><p>Godowns deleted</p></div>
-            <a href="<?php echo admin_url('admin.php?page=sinetiks_godowns_list') ?>">&laquo; Back to Godowns list</a>
+            <a href="<?php echo admin_url('admin.php?page=rbs_godowns_list') ?>">&laquo; Back to Godowns list</a>
 
         <?php } else if ($_POST['update']) { ?>
             <div class="updated"><p>Godowns updated</p></div>
-            <a href="<?php echo admin_url('admin.php?page=sinetiks_godowns_list') ?>">&laquo; Back to Godowns list</a>
+            <a href="<?php echo admin_url('admin.php?page=rbs_godowns_list') ?>">&laquo; Back to Godowns list</a>
 
         <?php } else { ?>
             <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
